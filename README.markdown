@@ -35,7 +35,9 @@ The template comes with the following package layout:
 * `Routes.scala` -- routes for the system, add your domain routes here.
 * `AkkaConfig.scala` -- akka config utility object to initialize akka configs.
 
-Once inside the project folder, configure the slick connections to use your databases inside `src/main/resources/akka-datastore.conf`, the default is mysql, then use the following command to run the code:
+Once inside the project folder, configure the slick connections to use your databases inside `src/main/resources/akka-datastore.conf`, please refer to [HikariCP](http://brettwooldridge.github.io/HikariCP/) for the db connection and pool settings for details, the default is using MySQL
+
+after setup datbase, use the following command to run the code:
 ```
 sbt run
 ```
