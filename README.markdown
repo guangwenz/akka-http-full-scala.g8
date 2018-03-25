@@ -1,4 +1,5 @@
-## Build Reactive Web Services with Akka! https://travis-ci.org/zgwmike/akka-http-full-scala.g8.svg?branch=master
+## Build Reactive Web Services with Akka! 
+[![Build Status](https://travis-ci.org/zgwmike/akka-http-full-scala.g8.svg?branch=master)](https://travis-ci.org/zgwmike/akka-http-full-scala.g8)
 
 # Introduction
 
