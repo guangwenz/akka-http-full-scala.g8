@@ -1,0 +1,23 @@
+swagger: '2.0'
+info:
+  version: "1.0"
+  title: $name$
+  description: |
+    **$name$**
+
+    $name$ build on top of Reactive Principles with Akka technology
+  contact:
+    name: "$name$"
+    email: "$name$@$name$.com"
+    url: ""
+basePath: /
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+tags:
+  - name: "$name$"
+    description: "$name$"
+
