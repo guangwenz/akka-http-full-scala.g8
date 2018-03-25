@@ -12,7 +12,7 @@ Prerequisites:
 
 Open a console and run the following command to apply this template:
 ```
-sbt new https://github.com/zgwmike/akka-http-full-scala.g8.git
+sbt new https://github.com/zgwmike/akka-http-full-scala.g8
 ```
 
 This template will prompt for the following parameters. Press `Enter` if the default values suit you:
@@ -34,7 +34,8 @@ The template comes with the following package layout:
 * `Boot.scala` -- Main class for the system
 * `Routes.scala` -- routes for the system, add your domain routes here.
 * `AkkaConfig.scala` -- akka config utility object to initialize akka configs.
-Once inside the project folder use the following command to run the code:
+
+Once inside the project folder, configure the slick connections to use your databases inside `src/main/resources/akka-datastore.conf`, the default is mysql, then use the following command to run the code:
 ```
 sbt run
 ```
@@ -42,7 +43,6 @@ sbt run
 Template license
 ----------------
 Written in 2018 by Guangwen Zhou <zgwmike@hotmail.com>
-[other author/contributor lines as appropriate]
 
 To the extent possible under law, the author(s) have dedicated all copyright and related
 and neighboring rights to this template to the public domain worldwide.
