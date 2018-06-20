@@ -59,4 +59,6 @@ object Dependencies {
     "io.kamon" %% "kamon-prometheus" % "1.0.0",
     "io.kamon" %% "kamon-zipkin" % "1.0.0"
   )
+  
+  lazy val splitBrainResolver = "org.guangwenz" %% "akka-down-resolver" % "1.2.4"
 }
