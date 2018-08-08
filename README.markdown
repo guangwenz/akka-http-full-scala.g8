@@ -13,7 +13,7 @@ Prerequisites:
 
 Open a console and run the following command to apply this template:
 ```
-sbt new https://github.com/zgwmike/akka-http-full-scala.g8
+sbt new zgwmike/akka-http-full-scala.g8
 ```
 
 This template will prompt for the following parameters. Press `Enter` if the default values suit you:
