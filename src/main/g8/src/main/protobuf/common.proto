@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+package common;
+option java_package = "$package$.common.proto";
+import "scalapb/scalapb.proto";
