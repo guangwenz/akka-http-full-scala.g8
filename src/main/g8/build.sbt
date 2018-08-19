@@ -31,7 +31,8 @@ lazy val root = (project in file(".")).
     libraryDependencies += joda,
     libraryDependencies += scalaTest % Test,
     libraryDependencies += "com.trueaccord.scalapb" %% "scalapb-runtime" % com.trueaccord.scalapb.compiler.Version.scalapbVersion % "protobuf",
-    dockerCommands += Cmd("USER", "root")
+    dockerCommands += Cmd("USER", "root"),
+    dockerBaseImage := "openjdk:8-jdk"
   )
 
 PB.targets in Compile := Seq(
