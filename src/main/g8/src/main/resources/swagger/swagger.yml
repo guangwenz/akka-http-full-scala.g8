@@ -21,3 +21,20 @@ tags:
   - name: "$name$"
     description: "$name$"
 
+paths:
+  /ping:
+    get:
+      tags:
+        - "utility"
+      responses:
+        200:
+          description: PONG response
+  /healthcheck:
+    get:
+      tags:
+        - "utility"
+      responses:
+        200:
+          description: health ping
+
+definitions:
