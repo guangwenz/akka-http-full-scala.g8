@@ -25,7 +25,8 @@ paths:
   /ping:
     get:
       tags:
-        - "utility"
+        - "utility"      
+      produces: ["text/plain"]
       responses:
         200:
           description: PONG response
@@ -33,8 +34,10 @@ paths:
     get:
       tags:
         - "utility"
+      produces: ["text/plain"]
       responses:
         200:
           description: health ping
 
 definitions:
+
