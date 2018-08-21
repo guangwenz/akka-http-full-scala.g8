@@ -42,6 +42,7 @@ after setup datbase, use the following command to run the code:
 ```
 sbt run
 ```
+then open http://localhost:8080 to see the swagger page!
 
 Template license
 ----------------
