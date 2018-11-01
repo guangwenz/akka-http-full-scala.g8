@@ -25,7 +25,6 @@ lazy val root = (project in file(".")).
     libraryDependencies ++= akkaHttp,
     libraryDependencies ++= akkaMgr,
     libraryDependencies ++= slick,
-    libraryDependencies ++= persistence,
     libraryDependencies += splitBrainResolver,
     libraryDependencies += logback,
     libraryDependencies += joda,

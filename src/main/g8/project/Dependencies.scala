@@ -47,11 +47,6 @@ object Dependencies {
     "com.lightbend.akka.discovery" %% "akka-discovery-kubernetes-api" % akkaManagementVersion
   )
 
-  lazy val persistence = Seq(
-    "com.github.dnvriend" %% "akka-persistence-jdbc" % "3.0.1",
-    "mysql" % "mysql-connector-java" % "6.0.5"
-  )
-
   lazy val kamon = Seq(
     "io.kamon" %% "kamon-core" % "1.1.0",
     "io.kamon" %% "kamon-akka-2.5" % "1.0.1",

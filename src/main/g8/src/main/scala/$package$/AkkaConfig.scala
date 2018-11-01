@@ -28,7 +28,6 @@ object AkkaConfig {
         println("akka.remote.netty.tcp.port", overrides.getString("akka.remote.netty.tcp.port"))
         println("akka.cluster.seed-nodes", overrides.getList("akka.cluster.seed-nodes"))
         println("db.tdb.url", overrides.getString("db.tdb.url"))
-        println("slick.db.host", overrides.getString("slick.db.host"))
         overrides
     }
 }
