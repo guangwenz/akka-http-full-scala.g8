@@ -1,6 +1,6 @@
 package $package$
 
-import collection.mutable.{LinkedHashMap, LinkedHashSet, Map => MutableMap}
+import scala.collection.mutable
 
 package object utils{
     
@@ -15,8 +15,8 @@ package object utils{
     }
 
     implicit class GroupByOrderedImpl[A](val items: Traversable[A]) extends AnyVal {
-        def groupByOrdered[K](f: A => K): MutableMap[K, LinkedHashSet[A]] = {
-            val map = LinkedHashMap[K, LinkedHashSet[A]]().withDefault(_ => LinkedHashSet[A]())
+        def groupByOrdered[K](f: A => K): mutable.Map[K, LinkedHashSet[A]] = {
+            val map = mutable.LinkedHashMap[K, mutable.LinkedHashSet[A]]().withDefault(_ => mutable.LinkedHashSet[A]())
             for (item <- items) {
                 val key = f(item)
                 map(key) = map(key) + item

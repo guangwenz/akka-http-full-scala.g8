@@ -45,14 +45,13 @@ object Boot {
 
         timeZone
 
-        implicit val actorSystemName =
-            sys.props.getOrElse(
-                "actorSystemName",
-                throw new IllegalArgumentException("Actor system name must be defined by the actorSystemName property")
-            )
+        implicit val actorSystemName: String =
+          sys.props.getOrElse(
+            "actorSystemName",
+            throw new IllegalArgumentException("Actor system name must be defined by the actorSystemName property"))
         val config = AkkaConfig.config(actorSystemName)
-        implicit val actorSystem = ActorSystem(actorSystemName, config)
-        implicit val materializer = ActorMaterializer()
+        implicit val actorSystem: ActorSystem = ActorSystem(actorSystemName, config)
+        implicit val materializer: ActorMaterializer = ActorMaterializer()
 
         val LOGGER = LoggerFactory.getLogger(actorSystemName)
 
