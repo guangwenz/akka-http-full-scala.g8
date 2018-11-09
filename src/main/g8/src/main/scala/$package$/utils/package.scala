@@ -15,7 +15,7 @@ package object utils{
     }
 
     implicit class GroupByOrderedImpl[A](val items: Traversable[A]) extends AnyVal {
-        def groupByOrdered[K](f: A => K): mutable.Map[K, LinkedHashSet[A]] = {
+        def groupByOrdered[K](f: A => K): mutable.Map[K, mutable.LinkedHashSet[A]] = {
             val map = mutable.LinkedHashMap[K, mutable.LinkedHashSet[A]]().withDefault(_ => mutable.LinkedHashSet[A]())
             for (item <- items) {
                 val key = f(item)
