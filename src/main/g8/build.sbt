@@ -29,7 +29,9 @@ lazy val root = (project in file(".")).
     libraryDependencies += logback,
     libraryDependencies += joda,
     libraryDependencies += scalaTest % Test,
-    libraryDependencies += "com.trueaccord.scalapb" %% "scalapb-runtime" % com.trueaccord.scalapb.compiler.Version.scalapbVersion % "protobuf",
+    libraryDependencies += "com.chuusai" %% "shapeless" % "2.3.3",
+    libraryDependencies += "com.thesamet.scalapb" %% "scalapb-json4s" % "0.7.1",
+    libraryDependencies += "com.thesamet.scalapb" %% "scalapb-runtime" % scalapb.compiler.Version.scalapbVersion % "protobuf",
     dockerCommands += Cmd("USER", "root"),
     dockerBaseImage := "openjdk:8-jdk"
   )
