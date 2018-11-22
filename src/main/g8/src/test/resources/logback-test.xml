@@ -1,0 +1,18 @@
+<configuration scan="true">
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="DEBUG">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+    <!-- uncomment following to print SQL logs. -->
+    <logger name="slick.jdbc.JdbcBackend.statement" level="debug"/>
+    <logger name="slick.jdbc.JdbcBackend.benchmark" level="debug"/>
+    <logger name="slick.jdbc.StatementInvoker.result" level="debug"/>
+    <logger name="slick.jdbc.JdbcBackend.parameter" level="debug"/>
+
+    <!-- uncomment following to show all slick logs. -->
+    <!-- <logger name="slick" level="debug"/> -->
+</configuration>
