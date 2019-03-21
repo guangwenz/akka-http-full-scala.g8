@@ -6,6 +6,10 @@ object Dependencies {
   val akkaVersion = "$akkaVersion$"
   val akkaHttpVersion = "$akkaHttpVersion$"
   val akkaManagementVersion = "$akkaManagementVersion$"
+  val kamonCore = "$kamonCore$"
+  val kamonAkka = "$kamonAkka$"
+  val kamonPrometheus = "$kamonPrometheus$"
+  val kamonZipkin = "$kamonZipkin$"
 
   lazy val joda = "joda-time" % "joda-time" % "2.9.9"
   lazy val logback = "ch.qos.logback" % "logback-classic" % "1.2.3"
@@ -48,11 +52,11 @@ object Dependencies {
   )
 
   lazy val kamon = Seq(
-    "io.kamon" %% "kamon-core" % "1.1.0",
-    "io.kamon" %% "kamon-akka-2.5" % "1.0.1",
-    "io.kamon" %% "kamon-akka-http-2.5" % "1.0.1",
-    "io.kamon" %% "kamon-prometheus" % "1.0.0",
-    "io.kamon" %% "kamon-zipkin" % "1.0.0"
+    "io.kamon" %% "kamon-core" % kamonCore,
+    "io.kamon" %% "kamon-akka-2.5" % kamonAkka,
+    "io.kamon" %% "kamon-akka-http-2.5" % kamonAkka,
+    "io.kamon" %% "kamon-prometheus" % kamonPrometheus,
+    "io.kamon" %% "kamon-zipkin" % kamonZipkin
   )
   
   lazy val splitBrainResolver = "org.guangwenz" %% "akka-down-resolver" % "1.2.4"
