@@ -12,7 +12,7 @@ import akka.http.scaladsl.Http
 import akka.actor.{ActorSystem, CoordinatedShutdown}
 import akka.cluster.Cluster
 import akka.management.cluster.bootstrap.ClusterBootstrap
-import akka.management.AkkaManagement
+import akka.management.scaladsl.AkkaManagement
 
 import akka.stream.ActorMaterializer
 import com.typesafe.config.{Config, ConfigFactory, ConfigValueFactory}

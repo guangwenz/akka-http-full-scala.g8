@@ -4,7 +4,7 @@
 lazy val root = (project in file("."))
 .enablePlugins(ScriptedPlugin)
 .settings(
-	name := "Akka Scala Reactive Web Services",
+	name := "akka-http-full-scala.g8",
 	Keys.test in Test := {
 		val _ = (g8Test in Test).toTask("").value
 	},

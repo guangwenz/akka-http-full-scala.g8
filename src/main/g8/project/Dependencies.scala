@@ -6,8 +6,10 @@ object Dependencies {
   val akkaVersion = "$akkaVersion$"
   val akkaHttpVersion = "$akkaHttpVersion$"
   val akkaManagementVersion = "$akkaManagementVersion$"
+  val akkaDiscoveryVersion = "$akkaDiscoveryVersion$"
   val kamonCore = "$kamonCore$"
   val kamonAkka = "$kamonAkka$"
+  val kamonAkkaHttp = "$kamonAkkaHttp$"
   val kamonPrometheus = "$kamonPrometheus$"
   val kamonZipkin = "$kamonZipkin$"
 
@@ -47,14 +49,14 @@ object Dependencies {
     "com.lightbend.akka.management" %% "akka-management" % akkaManagementVersion,
     "com.lightbend.akka.management" %% "akka-management-cluster-bootstrap" % akkaManagementVersion,
     "com.lightbend.akka.management" %% "akka-management-cluster-http" % akkaManagementVersion,
-    "com.lightbend.akka.discovery" %% "akka-discovery-dns" % akkaManagementVersion,
-    "com.lightbend.akka.discovery" %% "akka-discovery-kubernetes-api" % akkaManagementVersion
+    "com.lightbend.akka.discovery" %% "akka-discovery-dns" % akkaDiscoveryVersion,
+    "com.lightbend.akka.discovery" %% "akka-discovery-kubernetes-api" % akkaDiscoveryVersion
   )
 
   lazy val kamon = Seq(
     "io.kamon" %% "kamon-core" % kamonCore,
     "io.kamon" %% "kamon-akka-2.5" % kamonAkka,
-    "io.kamon" %% "kamon-akka-http-2.5" % kamonAkka,
+    "io.kamon" %% "kamon-akka-http-2.5" % kamonAkkaHttp,
     "io.kamon" %% "kamon-prometheus" % kamonPrometheus,
     "io.kamon" %% "kamon-zipkin" % kamonZipkin
   )
