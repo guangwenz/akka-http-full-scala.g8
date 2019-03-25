@@ -21,6 +21,7 @@ lazy val root = (project in file(".")).
     )),
     name := "$name$",
     libraryDependencies ++= kamon,
+    libraryDependencies ++= jackson,
     libraryDependencies ++= akka,
     libraryDependencies ++= akkaHttp,
     libraryDependencies ++= akkaMgr,

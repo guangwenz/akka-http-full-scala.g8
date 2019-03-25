@@ -59,6 +59,13 @@ object Dependencies {
     "io.kamon" %% "kamon-prometheus" % kamonPrometheus,
     "io.kamon" %% "kamon-zipkin" % kamonZipkin
   )
+
+  lazy val jackson = Seq(
+    "com.fasterxml.jackson.core" % "jackson-core" % "2.9.8",
+    "com.fasterxml.jackson.core" % "jackson-databind" % "2.9.8",
+    "com.fasterxml.jackson.core" % "jackson-annotations" % "2.9.8",
+    "com.fasterxml.jackson.dataformat" % "jackson-dataformat-cbor" % "2.9.8"
+  )
   
   lazy val splitBrainResolver = "org.guangwenz" %% "akka-down-resolver" % "1.2.4"
 }
