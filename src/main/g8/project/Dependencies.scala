@@ -37,6 +37,7 @@ object Dependencies {
     "com.typesafe.akka" %% "akka-cluster-sharding" % akkaVersion,
     "com.typesafe.akka" %% "akka-cluster-tools" % akkaVersion,
 
+    "com.typesafe.akka" %% "akka-discovery" % akkaVersion,
     //cluster metrics
     "io.kamon" % "sigar-loader" % "1.6.6-rev002",
     "com.typesafe.akka" %% "akka-cluster-metrics" % akkaVersion,
@@ -48,9 +49,7 @@ object Dependencies {
   lazy val akkaMgr = Seq(
     "com.lightbend.akka.management" %% "akka-management" % akkaManagementVersion,
     "com.lightbend.akka.management" %% "akka-management-cluster-bootstrap" % akkaManagementVersion,
-    "com.lightbend.akka.management" %% "akka-management-cluster-http" % akkaManagementVersion,
-    "com.lightbend.akka.discovery" %% "akka-discovery-dns" % akkaDiscoveryVersion,
-    "com.lightbend.akka.discovery" %% "akka-discovery-kubernetes-api" % akkaDiscoveryVersion
+    "com.lightbend.akka.management" %% "akka-management-cluster-http" % akkaManagementVersion
   )
 
   lazy val kamon = Seq(
