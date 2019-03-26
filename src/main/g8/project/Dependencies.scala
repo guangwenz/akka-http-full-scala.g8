@@ -49,7 +49,8 @@ object Dependencies {
   lazy val akkaMgr = Seq(
     "com.lightbend.akka.management" %% "akka-management" % akkaManagementVersion,
     "com.lightbend.akka.management" %% "akka-management-cluster-bootstrap" % akkaManagementVersion,
-    "com.lightbend.akka.management" %% "akka-management-cluster-http" % akkaManagementVersion
+    "com.lightbend.akka.management" %% "akka-management-cluster-http" % akkaManagementVersion,
+    "com.lightbend.akka.discovery" %% "akka-discovery-kubernetes-api" % akkaManagementVersion
   )
 
   lazy val kamon = Seq(
