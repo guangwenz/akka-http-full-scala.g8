@@ -4,7 +4,10 @@ import org.joda.time.DateTimeZone
 import java.util.TimeZone
 import org.slf4j.LoggerFactory
 
+import kamon.Kamon
+import kamon.prometheus.PrometheusReporter
 import kamon.sigar.SigarProvisioner
+
 import org.hyperic.sigar.Sigar
 
 import scala.concurrent.{Future, ExecutionContext}
@@ -44,6 +47,7 @@ object Boot {
         }
 
         timeZone
+        Kamon.addReporter(new PrometheusReporter())
 
         implicit val actorSystemName: String =
           sys.props.getOrElse(
