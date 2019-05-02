@@ -15,7 +15,9 @@ object Dependencies {
 
   lazy val joda = "joda-time" % "joda-time" % "2.9.9"
   lazy val logback = "ch.qos.logback" % "logback-classic" % "1.2.3"
-  lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.0.4"
+  
+  lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.0.4" % "test"
+  lazy val scalaCheck = "org.scalacheck" %% "scalacheck" % "1.14.0" % "test"
 
   lazy val slick = Seq(
     "com.typesafe.slick" %% "slick" % slickVersion,
